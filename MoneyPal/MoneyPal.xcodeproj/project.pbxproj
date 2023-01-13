@@ -1,0 +1,836 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F22CD557294762F800F19E3E /* MoneyPalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CD556294762F800F19E3E /* MoneyPalApp.swift */; };
+		F22CD559294762F800F19E3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CD558294762F800F19E3E /* ContentView.swift */; };
+		F22CD55B294762F900F19E3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22CD55A294762F900F19E3E /* Assets.xcassets */; };
+		F22CD55E294762F900F19E3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22CD55D294762F900F19E3E /* Preview Assets.xcassets */; };
+		F22CD568294762F900F19E3E /* MoneyPalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CD567294762F900F19E3E /* MoneyPalTests.swift */; };
+		F22CD572294762F900F19E3E /* MoneyPalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CD571294762F900F19E3E /* MoneyPalUITests.swift */; };
+		F22CD574294762F900F19E3E /* MoneyPalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CD573294762F900F19E3E /* MoneyPalUITestsLaunchTests.swift */; };
+		F22CD587294763CE00F19E3E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22CD586294763CE00F19E3E /* WidgetKit.framework */; };
+		F22CD589294763CE00F19E3E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22CD588294763CE00F19E3E /* SwiftUI.framework */; };
+		F22CD58C294763CE00F19E3E /* MoneyPalWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CD58B294763CE00F19E3E /* MoneyPalWidgetBundle.swift */; };
+		F22CD58E294763CE00F19E3E /* OrderStatusLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CD58D294763CE00F19E3E /* OrderStatusLiveActivity.swift */; };
+		F22CD590294763CE00F19E3E /* MoneyPalWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CD58F294763CE00F19E3E /* MoneyPalWidget.swift */; };
+		F22CD593294763D000F19E3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22CD592294763D000F19E3E /* Assets.xcassets */; };
+		F22CD595294763D000F19E3E /* MoneyPalWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F22CD591294763CE00F19E3E /* MoneyPalWidget.intentdefinition */; };
+		F22CD596294763D000F19E3E /* MoneyPalWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F22CD591294763CE00F19E3E /* MoneyPalWidget.intentdefinition */; };
+		F22CD599294763D000F19E3E /* MoneyPalWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F22CD584294763CE00F19E3E /* MoneyPalWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F257005E294768B800EC8463 /* OrderAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F257005D294768B800EC8463 /* OrderAttributes.swift */; };
+		F257005F294768B800EC8463 /* OrderAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F257005D294768B800EC8463 /* OrderAttributes.swift */; };
+		F25700612947759500EC8463 /* OrderFoodStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25700602947759500EC8463 /* OrderFoodStatus.swift */; };
+		F25700622947759500EC8463 /* OrderFoodStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25700602947759500EC8463 /* OrderFoodStatus.swift */; };
+		F25700642947765E00EC8463 /* OrderFoodAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25700632947765E00EC8463 /* OrderFoodAttributes.swift */; };
+		F25700652947765E00EC8463 /* OrderFoodAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25700632947765E00EC8463 /* OrderFoodAttributes.swift */; };
+		F25700672947828F00EC8463 /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25700662947828F00EC8463 /* OrderStatus.swift */; };
+		F25700682947828F00EC8463 /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25700662947828F00EC8463 /* OrderStatus.swift */; };
+		F2673AC7294C92FC0026F73F /* MarketTimerLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2673AAC294C85590026F73F /* MarketTimerLiveActivity.swift */; };
+		F2681BFF294C771200308357 /* MarketTimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681BFE294C771200308357 /* MarketTimerAttributes.swift */; };
+		F2681C00294C771200308357 /* MarketTimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2681BFE294C771200308357 /* MarketTimerAttributes.swift */; };
+		F2BFEB95294E5BC8007FADA1 /* MarketOpenTimerLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BFEB93294E5B92007FADA1 /* MarketOpenTimerLiveActivity.swift */; };
+		F2D04390295B2B7F0037B163 /* TestLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0438F295B2B7F0037B163 /* TestLiveActivity.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F22CD564294762F900F19E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F22CD54B294762F800F19E3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F22CD552294762F800F19E3E;
+			remoteInfo = MoneyPal;
+		};
+		F22CD56E294762F900F19E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F22CD54B294762F800F19E3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F22CD552294762F800F19E3E;
+			remoteInfo = MoneyPal;
+		};
+		F22CD597294763D000F19E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F22CD54B294762F800F19E3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F22CD583294763CE00F19E3E;
+			remoteInfo = MoneyPalWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F22CD59D294763D000F19E3E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F22CD599294763D000F19E3E /* MoneyPalWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F22CD553294762F800F19E3E /* MoneyPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22CD556294762F800F19E3E /* MoneyPalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyPalApp.swift; sourceTree = "<group>"; };
+		F22CD558294762F800F19E3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F22CD55A294762F900F19E3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F22CD55D294762F900F19E3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F22CD563294762F900F19E3E /* MoneyPalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyPalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22CD567294762F900F19E3E /* MoneyPalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyPalTests.swift; sourceTree = "<group>"; };
+		F22CD56D294762F900F19E3E /* MoneyPalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyPalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22CD571294762F900F19E3E /* MoneyPalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyPalUITests.swift; sourceTree = "<group>"; };
+		F22CD573294762F900F19E3E /* MoneyPalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyPalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F22CD584294763CE00F19E3E /* MoneyPalWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MoneyPalWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22CD586294763CE00F19E3E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		F22CD588294763CE00F19E3E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		F22CD58B294763CE00F19E3E /* MoneyPalWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyPalWidgetBundle.swift; sourceTree = "<group>"; };
+		F22CD58D294763CE00F19E3E /* OrderStatusLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusLiveActivity.swift; sourceTree = "<group>"; };
+		F22CD58F294763CE00F19E3E /* MoneyPalWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyPalWidget.swift; sourceTree = "<group>"; };
+		F22CD591294763CE00F19E3E /* MoneyPalWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MoneyPalWidget.intentdefinition; sourceTree = "<group>"; };
+		F22CD592294763D000F19E3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F22CD594294763D000F19E3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F257005D294768B800EC8463 /* OrderAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAttributes.swift; sourceTree = "<group>"; };
+		F25700602947759500EC8463 /* OrderFoodStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFoodStatus.swift; sourceTree = "<group>"; };
+		F25700632947765E00EC8463 /* OrderFoodAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFoodAttributes.swift; sourceTree = "<group>"; };
+		F25700662947828F00EC8463 /* OrderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
+		F2673AAC294C85590026F73F /* MarketTimerLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTimerLiveActivity.swift; sourceTree = "<group>"; };
+		F2681BFE294C771200308357 /* MarketTimerAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTimerAttributes.swift; sourceTree = "<group>"; };
+		F2B4DDEA2950DDC100315241 /* MoneyPal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoneyPal.entitlements; sourceTree = "<group>"; };
+		F2B4DDEB2950DE0400315241 /* MoneyPalWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoneyPalWidgetExtension.entitlements; sourceTree = "<group>"; };
+		F2BFEB93294E5B92007FADA1 /* MarketOpenTimerLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketOpenTimerLiveActivity.swift; sourceTree = "<group>"; };
+		F2C44374294F37F3003E6C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F2D0438F295B2B7F0037B163 /* TestLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLiveActivity.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F22CD550294762F800F19E3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22CD560294762F900F19E3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22CD56A294762F900F19E3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22CD581294763CE00F19E3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22CD589294763CE00F19E3E /* SwiftUI.framework in Frameworks */,
+				F22CD587294763CE00F19E3E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F22CD54A294762F800F19E3E = {
+			isa = PBXGroup;
+			children = (
+				F2B4DDEB2950DE0400315241 /* MoneyPalWidgetExtension.entitlements */,
+				F22CD555294762F800F19E3E /* MoneyPal */,
+				F22CD566294762F900F19E3E /* MoneyPalTests */,
+				F22CD570294762F900F19E3E /* MoneyPalUITests */,
+				F22CD58A294763CE00F19E3E /* MoneyPalWidget */,
+				F22CD585294763CE00F19E3E /* Frameworks */,
+				F22CD554294762F800F19E3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F22CD554294762F800F19E3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F22CD553294762F800F19E3E /* MoneyPal.app */,
+				F22CD563294762F900F19E3E /* MoneyPalTests.xctest */,
+				F22CD56D294762F900F19E3E /* MoneyPalUITests.xctest */,
+				F22CD584294763CE00F19E3E /* MoneyPalWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F22CD555294762F800F19E3E /* MoneyPal */ = {
+			isa = PBXGroup;
+			children = (
+				F2B4DDEA2950DDC100315241 /* MoneyPal.entitlements */,
+				F2C44374294F37F3003E6C5B /* Info.plist */,
+				F22CD556294762F800F19E3E /* MoneyPalApp.swift */,
+				F22CD558294762F800F19E3E /* ContentView.swift */,
+				F22CD55A294762F900F19E3E /* Assets.xcassets */,
+				F22CD55C294762F900F19E3E /* Preview Content */,
+				F25700632947765E00EC8463 /* OrderFoodAttributes.swift */,
+			);
+			path = MoneyPal;
+			sourceTree = "<group>";
+		};
+		F22CD55C294762F900F19E3E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F22CD55D294762F900F19E3E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F22CD566294762F900F19E3E /* MoneyPalTests */ = {
+			isa = PBXGroup;
+			children = (
+				F22CD567294762F900F19E3E /* MoneyPalTests.swift */,
+			);
+			path = MoneyPalTests;
+			sourceTree = "<group>";
+		};
+		F22CD570294762F900F19E3E /* MoneyPalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F22CD571294762F900F19E3E /* MoneyPalUITests.swift */,
+				F22CD573294762F900F19E3E /* MoneyPalUITestsLaunchTests.swift */,
+			);
+			path = MoneyPalUITests;
+			sourceTree = "<group>";
+		};
+		F22CD585294763CE00F19E3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F22CD586294763CE00F19E3E /* WidgetKit.framework */,
+				F22CD588294763CE00F19E3E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F22CD58A294763CE00F19E3E /* MoneyPalWidget */ = {
+			isa = PBXGroup;
+			children = (
+				F22CD58B294763CE00F19E3E /* MoneyPalWidgetBundle.swift */,
+				F22CD58D294763CE00F19E3E /* OrderStatusLiveActivity.swift */,
+				F22CD58F294763CE00F19E3E /* MoneyPalWidget.swift */,
+				F22CD591294763CE00F19E3E /* MoneyPalWidget.intentdefinition */,
+				F22CD592294763D000F19E3E /* Assets.xcassets */,
+				F22CD594294763D000F19E3E /* Info.plist */,
+				F257005D294768B800EC8463 /* OrderAttributes.swift */,
+				F25700602947759500EC8463 /* OrderFoodStatus.swift */,
+				F25700662947828F00EC8463 /* OrderStatus.swift */,
+				F2681BFE294C771200308357 /* MarketTimerAttributes.swift */,
+				F2673AAC294C85590026F73F /* MarketTimerLiveActivity.swift */,
+				F2BFEB93294E5B92007FADA1 /* MarketOpenTimerLiveActivity.swift */,
+				F2D0438F295B2B7F0037B163 /* TestLiveActivity.swift */,
+			);
+			path = MoneyPalWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F22CD552294762F800F19E3E /* MoneyPal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22CD577294762F900F19E3E /* Build configuration list for PBXNativeTarget "MoneyPal" */;
+			buildPhases = (
+				F22CD54F294762F800F19E3E /* Sources */,
+				F22CD550294762F800F19E3E /* Frameworks */,
+				F22CD551294762F800F19E3E /* Resources */,
+				F22CD59D294763D000F19E3E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F22CD598294763D000F19E3E /* PBXTargetDependency */,
+			);
+			name = MoneyPal;
+			productName = MoneyPal;
+			productReference = F22CD553294762F800F19E3E /* MoneyPal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F22CD562294762F900F19E3E /* MoneyPalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22CD57A294762F900F19E3E /* Build configuration list for PBXNativeTarget "MoneyPalTests" */;
+			buildPhases = (
+				F22CD55F294762F900F19E3E /* Sources */,
+				F22CD560294762F900F19E3E /* Frameworks */,
+				F22CD561294762F900F19E3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F22CD565294762F900F19E3E /* PBXTargetDependency */,
+			);
+			name = MoneyPalTests;
+			productName = MoneyPalTests;
+			productReference = F22CD563294762F900F19E3E /* MoneyPalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F22CD56C294762F900F19E3E /* MoneyPalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22CD57D294762F900F19E3E /* Build configuration list for PBXNativeTarget "MoneyPalUITests" */;
+			buildPhases = (
+				F22CD569294762F900F19E3E /* Sources */,
+				F22CD56A294762F900F19E3E /* Frameworks */,
+				F22CD56B294762F900F19E3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F22CD56F294762F900F19E3E /* PBXTargetDependency */,
+			);
+			name = MoneyPalUITests;
+			productName = MoneyPalUITests;
+			productReference = F22CD56D294762F900F19E3E /* MoneyPalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F22CD583294763CE00F19E3E /* MoneyPalWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22CD59A294763D000F19E3E /* Build configuration list for PBXNativeTarget "MoneyPalWidgetExtension" */;
+			buildPhases = (
+				F22CD580294763CE00F19E3E /* Sources */,
+				F22CD581294763CE00F19E3E /* Frameworks */,
+				F22CD582294763CE00F19E3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoneyPalWidgetExtension;
+			productName = MoneyPalWidgetExtension;
+			productReference = F22CD584294763CE00F19E3E /* MoneyPalWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F22CD54B294762F800F19E3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F22CD552294762F800F19E3E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					F22CD562294762F900F19E3E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F22CD552294762F800F19E3E;
+					};
+					F22CD56C294762F900F19E3E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F22CD552294762F800F19E3E;
+					};
+					F22CD583294763CE00F19E3E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = F22CD54E294762F800F19E3E /* Build configuration list for PBXProject "MoneyPal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F22CD54A294762F800F19E3E;
+			productRefGroup = F22CD554294762F800F19E3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F22CD552294762F800F19E3E /* MoneyPal */,
+				F22CD562294762F900F19E3E /* MoneyPalTests */,
+				F22CD56C294762F900F19E3E /* MoneyPalUITests */,
+				F22CD583294763CE00F19E3E /* MoneyPalWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F22CD551294762F800F19E3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22CD55E294762F900F19E3E /* Preview Assets.xcassets in Resources */,
+				F22CD55B294762F900F19E3E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22CD561294762F900F19E3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22CD56B294762F900F19E3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22CD582294763CE00F19E3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22CD593294763D000F19E3E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F22CD54F294762F800F19E3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22CD596294763D000F19E3E /* MoneyPalWidget.intentdefinition in Sources */,
+				F25700642947765E00EC8463 /* OrderFoodAttributes.swift in Sources */,
+				F25700612947759500EC8463 /* OrderFoodStatus.swift in Sources */,
+				F2681BFF294C771200308357 /* MarketTimerAttributes.swift in Sources */,
+				F22CD559294762F800F19E3E /* ContentView.swift in Sources */,
+				F22CD557294762F800F19E3E /* MoneyPalApp.swift in Sources */,
+				F25700672947828F00EC8463 /* OrderStatus.swift in Sources */,
+				F257005E294768B800EC8463 /* OrderAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22CD55F294762F900F19E3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22CD568294762F900F19E3E /* MoneyPalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22CD569294762F900F19E3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22CD574294762F900F19E3E /* MoneyPalUITestsLaunchTests.swift in Sources */,
+				F22CD572294762F900F19E3E /* MoneyPalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22CD580294763CE00F19E3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2673AC7294C92FC0026F73F /* MarketTimerLiveActivity.swift in Sources */,
+				F2681C00294C771200308357 /* MarketTimerAttributes.swift in Sources */,
+				F2BFEB95294E5BC8007FADA1 /* MarketOpenTimerLiveActivity.swift in Sources */,
+				F25700622947759500EC8463 /* OrderFoodStatus.swift in Sources */,
+				F22CD590294763CE00F19E3E /* MoneyPalWidget.swift in Sources */,
+				F22CD595294763D000F19E3E /* MoneyPalWidget.intentdefinition in Sources */,
+				F257005F294768B800EC8463 /* OrderAttributes.swift in Sources */,
+				F25700682947828F00EC8463 /* OrderStatus.swift in Sources */,
+				F25700652947765E00EC8463 /* OrderFoodAttributes.swift in Sources */,
+				F22CD58E294763CE00F19E3E /* OrderStatusLiveActivity.swift in Sources */,
+				F2D04390295B2B7F0037B163 /* TestLiveActivity.swift in Sources */,
+				F22CD58C294763CE00F19E3E /* MoneyPalWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F22CD565294762F900F19E3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F22CD552294762F800F19E3E /* MoneyPal */;
+			targetProxy = F22CD564294762F900F19E3E /* PBXContainerItemProxy */;
+		};
+		F22CD56F294762F900F19E3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F22CD552294762F800F19E3E /* MoneyPal */;
+			targetProxy = F22CD56E294762F900F19E3E /* PBXContainerItemProxy */;
+		};
+		F22CD598294763D000F19E3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F22CD583294763CE00F19E3E /* MoneyPalWidgetExtension */;
+			targetProxy = F22CD597294763D000F19E3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F22CD575294762F900F19E3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F22CD576294762F900F19E3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F22CD578294762F900F19E3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoneyPal/MoneyPal.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MoneyPal/Preview Content\"";
+				DEVELOPMENT_TEAM = C5NYRXAMR7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoneyPal/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.priyal.porwal.MoneyPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F22CD579294762F900F19E3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoneyPal/MoneyPal.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MoneyPal/Preview Content\"";
+				DEVELOPMENT_TEAM = C5NYRXAMR7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoneyPal/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.priyal.porwal.MoneyPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F22CD57B294762F900F19E3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5NYRXAMR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.priyal.porwal.MoneyPalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyPal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MoneyPal";
+			};
+			name = Debug;
+		};
+		F22CD57C294762F900F19E3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5NYRXAMR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.priyal.porwal.MoneyPalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyPal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MoneyPal";
+			};
+			name = Release;
+		};
+		F22CD57E294762F900F19E3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5NYRXAMR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.priyal.porwal.MoneyPalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoneyPal;
+			};
+			name = Debug;
+		};
+		F22CD57F294762F900F19E3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5NYRXAMR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.priyal.porwal.MoneyPalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoneyPal;
+			};
+			name = Release;
+		};
+		F22CD59B294763D000F19E3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MoneyPalWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5NYRXAMR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoneyPalWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MoneyPalWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.priyal.porwal.MoneyPal.MoneyPalWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F22CD59C294763D000F19E3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MoneyPalWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5NYRXAMR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoneyPalWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MoneyPalWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.priyal.porwal.MoneyPal.MoneyPalWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F22CD54E294762F800F19E3E /* Build configuration list for PBXProject "MoneyPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22CD575294762F900F19E3E /* Debug */,
+				F22CD576294762F900F19E3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22CD577294762F900F19E3E /* Build configuration list for PBXNativeTarget "MoneyPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22CD578294762F900F19E3E /* Debug */,
+				F22CD579294762F900F19E3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22CD57A294762F900F19E3E /* Build configuration list for PBXNativeTarget "MoneyPalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22CD57B294762F900F19E3E /* Debug */,
+				F22CD57C294762F900F19E3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22CD57D294762F900F19E3E /* Build configuration list for PBXNativeTarget "MoneyPalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22CD57E294762F900F19E3E /* Debug */,
+				F22CD57F294762F900F19E3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22CD59A294763D000F19E3E /* Build configuration list for PBXNativeTarget "MoneyPalWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22CD59B294763D000F19E3E /* Debug */,
+				F22CD59C294763D000F19E3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F22CD54B294762F800F19E3E /* Project object */;
+}
